@@ -1,0 +1,11 @@
+pypdf
+sentence-transformers
+gradio
+numpy
+scikit-learn
+python-dotenv
+requests 
+pinecone
+pypdf
+langchain
+openai

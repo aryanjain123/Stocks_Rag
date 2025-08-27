@@ -1,0 +1,6 @@
+venv
+.env
+.md
+.test_query.py
+donwnloads
+_pycache_
