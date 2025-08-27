@@ -25,20 +25,17 @@ This is a Retrieval-Augmented Generation (RAG) system that allows you to upload 
    pip install -r requirements.txt
    ```
 
-3. (Optional) For LLM mode, copy `.env.example` to `.env` and add your OpenAI API key:
+3. Download and install Ollama from [https://ollama.com/download](https://ollama.com/download).
+   Pull the required model for embedding queries:
+   ```bash
+   ollama pull nomic-embed-text
+   ```
+
+4. (Optional) For LLM mode, copy `.env.example` to `.env` and add your OpenAI API key:
    ```bash
    cp .env.example .env
    ```
    Then edit `.env` to add your API key.
-
-## Usage
-
-Run the application:
-```bash
-python app.py
-```
-
-Then open the provided URL in your browser to use the Gradio interface.
 
 ## How It Works
 
