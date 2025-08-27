@@ -47,9 +47,9 @@ with gr.Blocks(title="RAG Query Interface") as app:
     # Example queries
     gr.Examples(
         examples=[
-            "What is this document about?",
-            "Can you summarize the key points?",
-            "What are the main findings?"
+            "What is PFC's growth strategy?",
+            "How has Stallion performed recently?",
+            "What did management say about future outlook about stallion?"
         ],
         inputs=query_input
     )
