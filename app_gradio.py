@@ -44,12 +44,23 @@ with gr.Blocks(title="RAG Query Interface") as app:
                 lines=10
             )
     
+    # Display list of companies
+    gr.Markdown("## Companies in Database")
+    with open("companies.txt", "r") as f:
+        companies_list = f.read()
+    gr.Textbox(
+        label="",
+        value=companies_list,
+        interactive=False,
+        lines=15
+    )
+    
     # Example queries
     gr.Examples(
         examples=[
             "What is PFC's growth strategy?",
             "How has Stallion performed recently?",
-            "What did management say about future outlook about stallion?"
+            "What did management say about future outlook?"
         ],
         inputs=query_input
     )

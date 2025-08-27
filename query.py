@@ -26,7 +26,7 @@ index = pc.Index(index_name)
 # Setup OpenRouter (if available)
 # ================================
 if OPENAI_AVAILABLE:
-    OPENROUTER_API_KEY = "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"
+    OPENROUTER_API_KEY = "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"
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
         api_key=OPENROUTER_API_KEY,
@@ -112,7 +112,7 @@ def generate_answer(query, contexts):
 # ================================
 # Query Function
 # ================================
-def query_index(query_text, top_k=10):
+def query_index(query_text, top_k=20):
     print(f"Generating embedding for query: '{query_text[:50]}...'")
     
     # Generate embedding for the query
