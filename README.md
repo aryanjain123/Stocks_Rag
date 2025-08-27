@@ -3,8 +3,8 @@
 This is a Retrieval-Augmented Generation (RAG) system that allows you to upload PDF documents and ask questions about their content.
 
 ## Features
+![alt text](image.png)
 
-- Upload one or more PDF documents
 - Extract and chunk text from PDFs
 - Create embeddings for text chunks
 - Retrieve relevant chunks for a user query

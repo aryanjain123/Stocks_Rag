@@ -26,7 +26,7 @@ index = pc.Index(index_name)
 # Setup OpenRouter (if available)
 # ================================
 if OPENAI_AVAILABLE:
-    OPENROUTER_API_KEY = "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"
+    OPENROUTER_API_KEY = "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"
     client = OpenAI(
         base_url="https://openrouter.ai/api/v1",
         api_key=OPENROUTER_API_KEY,
